@@ -1,0 +1,85 @@
+/* P1.HTML CODE */
+.commonAnimation{
+    padding: 20px;
+    border-radius: 5px;
+    margin: 30px;
+    height: 300px;
+}
+.commonAnimation>h1{
+    text-align: center;
+    /*color:#000; */ /*to get color for p2 html we commented */
+    font-size: 40px;
+    text-shadow: 10px 5px 9px #000;
+
+}
+.animation1{
+    background: #3f0787;
+    /*animation:shayana;
+    animation-duration: 5s;       
+    animation-iteration-count: infinite; */
+    /*instead of above code we can use short form */
+    animation: shayana 10s infinite;
+}
+@keyframes shayana {
+    from{background: green;}
+    to{background: orangered;}
+}
+
+/*P2.HTML */
+.animation2{
+  background: url(../images/ARMY\ \(2\).jpg) no-repeat center;  
+  background-size: 100%;
+  animation:animation_image 10s infinite ;
+}
+@keyframes animation_image{
+    from{background: url(../images/ARMY\ \(1\).jpg)no-repeat top;
+    color: purple;
+}
+to{
+    background: url(../images/ARMY\ \(2\).jpg) center bottom;
+    color: aqua;
+}
+}
+
+/*P3.HTML */
+.animation3{
+    background: palegoldenrod;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 5px;
+    color: chocolate;
+    position: absolute;
+    animation: cssAnimation3 10s infinite;
+}
+@keyframes  cssAnimation3 {
+    0%{
+      top:0px;
+      left:0px;
+      color: crimson;
+      background: #4a08ff ;
+     /*we can use image as bg*/
+    }
+    25%{  
+         top:0px;
+        left:600px;
+        color: rgb(10, 247, 148);
+        background:url(../images/ARMY\ \(2\).jpg);}
+    50%{
+        top:400px;
+        left:600px;
+        color: rgb(15, 139, 255);
+        background: #4a08ff;
+    }
+    75%{
+        top:400px;
+        left:0px;
+        color: rgb(28, 101, 248);
+        background: #000000;
+    }
+    100%{
+        top:0px;
+        left:0px;
+        color: rgb(255, 255, 255);
+        background: #040404;
+    }
+}
